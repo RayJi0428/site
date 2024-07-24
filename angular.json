@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lesson-001": {
+    "site-proj": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lesson-001:build:production"
+              "buildTarget": "site-proj:build:production"
             },
             "development": {
-              "buildTarget": "lesson-001:build:development"
+              "buildTarget": "site-proj:build:development"
             }
           },
           "defaultConfiguration": "development"

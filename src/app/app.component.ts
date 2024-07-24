@@ -22,7 +22,7 @@ import { NgFor, NgIf } from '@angular/common';
   ]
 })
 export class AppComponent {
-  title = 'lesson-001';
+  title = 'site-proj';
   users = DUMMY_USERS;
   selectedUserId?: string;
 
