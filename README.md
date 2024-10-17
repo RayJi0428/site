@@ -5,6 +5,8 @@
 ### 安裝
 
 npm i create-vue
+npm i element-plus --save
+npm install -D unplugin-vue-components unplugin-auto-import
 
 ### 建立
 
