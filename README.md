@@ -1,3 +1,21 @@
+# DEMO網站
+
+## Setup
+
+### 安裝
+
+npm i create-vue
+
+### 建立
+
+npm create vue@latest
+
+### 版本
+
+nodeJS 20.17.0
+
+---
+
 # site
 
 This template should help get you started developing with Vue 3 in Vite.
