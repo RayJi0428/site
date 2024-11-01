@@ -4,9 +4,19 @@
 
 ### 安裝
 
-npm i create-vue
-npm i element-plus --save
-npm install -D unplugin-vue-components unplugin-auto-import
+- `npm i create-vue`
+
+- `npm i element-plus --save`
+
+- `npm install -D unplugin-vue-components unplugin-auto-import`
+
+- `npm install bootstrap`
+
+- `npm install vue bootstrap bootstrap-vue`
+
+### 備註
+
+- 暫時不確定是否需要poperjs [link](https://stackoverflow.com/questions/46155017/bootstrap-4-beta-is-popper-js-required)
 
 ### 建立
 
