@@ -21,6 +21,18 @@ const router = createRouter({
           name: 'about',
           component: () => import('../views/layout/page/AboutView.vue'),
         },
+        {
+          path: '/element_plus',
+          name: 'ElementPlus',
+          component: () =>
+            import('../views/layout/page/element+/ElementPlusView.vue'),
+        },
+        {
+          path: '/loadash',
+          name: 'Loadash',
+          component: () =>
+            import('../views/layout/page/loadash/LoadashView.vue'),
+        },
       ],
     },
   ],

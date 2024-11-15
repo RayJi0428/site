@@ -1,39 +1,45 @@
 <template>
   <el-menu
-    default-active="2"
     class="el-menu-vertical-demo"
     :collapse="isCollapse"
     @open="handleOpen"
     @close="handleClose"
     @select="handleSelect"
   >
-    <el-sub-menu index="1">
+    <!--sub-menu-template------------------------------------------------------------>
+    <!-- <el-sub-menu index="1">
       <template #title>
-        <el-icon><location /></el-icon>
-        <span>Navigator One</span>
+        <img
+          width="20"
+          src="https://element-plus.org//images/element-plus-logo-small.svg"
+        />
+        <span>Element+</span>
       </template>
-      <el-menu-item-group>
-        <template #title><span>Group One</span></template>
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
-      </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="1-3">item three</el-menu-item>
-      </el-menu-item-group>
-      <el-sub-menu index="1-4">
-        <template #title><span>item four</span></template>
-        <el-menu-item index="1-4-1">item one</el-menu-item>
-      </el-sub-menu>
-    </el-sub-menu>
-    <el-menu-item index="2">
-      <el-icon><icon-menu /></el-icon>
-      <template #title>Navigator Two</template>
+    </el-sub-menu> -->
+    <!--首頁------------------------------------------------------------------------------>
+    <el-menu-item index="/">
+      <i class="fa-solid fa-house"></i>
+      <template #title>
+        <span>Home</span>
+      </template>
     </el-menu-item>
-    <el-menu-item index="3" disabled>
-      <el-icon><document /></el-icon>
-      <template #title>Navigator Three</template>
+    <!--element-plus-------------------------------------------------------------------->
+    <el-menu-item index="element_plus">
+      <img
+        width="20"
+        src="https://element-plus.org//images/element-plus-logo-small.svg"
+      />
+      <template #title>
+        <span>Element+</span>
+      </template>
     </el-menu-item>
-    <el-menu-item index="4">
+    <!--loadash------------------------------------------------------------------------>
+    <el-menu-item index="loadash">
+      <img width="20" src="https://lodash.com/icons/favicon-32x32.png" />
+      <template #title>Loadash</template>
+    </el-menu-item>
+    <!--開關箭頭-->
+    <el-menu-item index="arrow">
       <el-icon v-if="!isCollapse"><DArrowLeft /></el-icon>
       <el-icon v-if="isCollapse"><DArrowRight /></el-icon>
     </el-menu-item>
@@ -50,6 +56,7 @@ import {
   Location,
   Setting,
 } from '@element-plus/icons-vue'
+import router from '@/router'
 
 const isCollapse = ref(true)
 const handleOpen = (key: string, keyPath: string[]) => {
@@ -61,15 +68,18 @@ const handleClose = (key: string, keyPath: string[]) => {
 
 const handleSelect = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
-  if (key === '4') {
+
+  if (key === 'arrow') {
     isCollapse.value = !isCollapse.value
+  } else {
+    router.push(key)
   }
 }
 </script>
 
 <style>
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
+  width: 120px;
   min-height: 400px;
 }
 </style>
