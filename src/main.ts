@@ -6,6 +6,7 @@ import router from './router'
 
 //element-plus
 import ElementPlus from 'element-plus'
+import '../node_modules/element-plus/dist/index.css'
 
 //bootstrap
 import 'bootstrap'
