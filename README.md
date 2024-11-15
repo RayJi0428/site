@@ -33,3 +33,7 @@ nodeJS 20.17.0
   ```
   <script rc="https://kit.fontawesome.com/04fa0457de.js" crossorigin="anonymous"></script>
   ```
+
+### 問題紀錄
+
+- [找不到 plugin-vue_export-helper 問題](https://github.com/vitejs/vite/issues/9119)
