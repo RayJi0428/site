@@ -47,16 +47,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-import {
-  DArrowLeft,
-  DArrowRight,
-  Document,
-  Menu as IconMenu,
-  Location,
-  Setting,
-} from '@element-plus/icons-vue'
 import router from '@/router'
+import { DArrowLeft, DArrowRight } from '@element-plus/icons-vue'
+import { ref } from 'vue'
 
 const isCollapse = ref(true)
 const handleOpen = (key: string, keyPath: string[]) => {
